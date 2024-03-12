@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/MetehanWorkspace/Demo.unity
+- path: Assets/BirolWorkspace/Birol.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
