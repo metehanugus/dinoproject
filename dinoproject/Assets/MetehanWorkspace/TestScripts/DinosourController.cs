@@ -6,7 +6,7 @@ public class DinosaurController : MonoBehaviour
     public Dinosaur dinosaurData;
     private NavMeshAgent agent;
     private GameObject player;
-    public float detectionRadius = 25f; // İnsan algılama radiusu
+    public float detectionRadius = 10f; // İnsan algılama radiusu
     private bool isAttackingHuman = false;
 
     private void Start()
@@ -21,7 +21,7 @@ public class DinosaurController : MonoBehaviour
     {
         if (!isAttackingHuman) // Eğer bir insanla meşgul değilse, oyuncuya doğru ilerle
         {
-            //Debug.Log("Dinozor playere ilerliyor");
+            Debug.Log("Dinozor playere ilerliyor");
             agent.SetDestination(player.transform.position);
         }
 
@@ -32,14 +32,14 @@ public class DinosaurController : MonoBehaviour
             {
                 // İnsan NPC'yi algıla ve ona doğru hareket et
                 agent.SetDestination(hitCollider.transform.position);
-                //Debug.Log("Dinozor bir insana ilerliyor");
+                Debug.Log("Dinozor bir insana ilerliyor");
                 isAttackingHuman = true;
 
                 if (Vector3.Distance(transform.position, hitCollider.transform.position) <= dinosaurData.attackRange)
                 {
                     // İnsan NPC'yi öldür
                     Destroy(hitCollider.gameObject);
-                    //Debug.Log("Dinozor bir insanı öldürdü!");
+                    Debug.Log("Dinozor bir insanı öldürdü!");
                     isAttackingHuman = false; // İnsan saldırısı bittikten sonra bu flag'i sıfırla
                 }
                 break; // En yakın insanı hedef al ve döngüyü sonlandır
