@@ -44,3 +44,36 @@ The following packages were updated:
   com.unity.test-framework from version 1.1.30 to 1.1.33
   com.unity.timeline from version 1.6.3 to 1.7.5
   com.unity.visualscripting from version 1.7.6 to 1.9.1
+
+=== Sun Mar 17 20:42:35 2024
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ide.visualstudio from version 2.0.17 to 2.0.21
+  com.unity.inputsystem from version 1.0.2 to 1.7.0
+  com.unity.postprocessing from version 3.1.1 to 3.2.2
+  com.unity.test-framework from version 1.1.27 to 1.1.33
+
+=== Sun Mar 17 20:42:36 2024
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.ext.nunit@1.0.6
+  com.unity.inputsystem@1.7.0
+  com.unity.postprocessing@3.2.2
+  com.unity.modules.uielementsnative@1.0.0
+
+=== Sun Mar 17 20:45:19 2024
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ide.visualstudio from version 2.0.17 to 2.0.21
+  com.unity.inputsystem from version 1.0.2 to 1.7.0
+  com.unity.postprocessing from version 3.1.1 to 3.2.2
+  com.unity.test-framework from version 1.1.27 to 1.1.33

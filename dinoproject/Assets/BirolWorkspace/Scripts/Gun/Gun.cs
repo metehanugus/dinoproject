@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Gun : MonoBehaviour
 {
+    public Animator animator;
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 15f;
@@ -19,8 +21,14 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire)
         {
+            animator.SetTrigger("Fire");
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            animator.SetTrigger("Reload");
         }
     }
 
