@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/MetehanWorkspace/Demo.unity
+- path: Assets/Cowsins/Demo/Showroom.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
